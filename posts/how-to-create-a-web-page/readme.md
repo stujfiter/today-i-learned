@@ -4,7 +4,7 @@
 
 Today, you are going to learn how to create your very own web page.  It's not going to be the fanciest web page ever, but hey, everybody's gotta start somewhere so let's get going.
 
-This topic also assumes you know how to create a raw text file. [Find Out How](https://www.computerhope.com/issues/ch001359.htm)
+This topic also assumes you know how to create a raw text file. <a href="https://www.computerhope.com/issues/ch001359.htm" target="_blank">Find Out How</a>
 
 ## Step 1
 Copy the following code, and paste it into your text editor.
