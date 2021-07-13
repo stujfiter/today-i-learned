@@ -10,12 +10,14 @@ This topic also assumes you know how to create a raw text file. <a href="https:/
 Copy the following code, and paste it into your text editor.
 ```html
 <!DOCTYPE html>
-<head>
+<html>
+  <head>
     <title>My First Webpage</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello, World!</h1>
-</body>
+  </body>
+</html>
 ```
 
 ## Step 2
@@ -37,6 +39,11 @@ When you open a text file with an extension of .html or .htm in your browser, th
 <!DOCTYPE html>
 ```
 This line tells the browser exactly which standard to use to interpret your text file. In this case it's [__HTML version 5__](https://www.w3.org/TR/html52/).
+
+```html
+<html>
+```
+This line is the root tag of an html document.  Every other tag is placed within the opening and closing __html__ tags.
 
 ```html
 <head>
@@ -68,15 +75,28 @@ The opening body tag that begins the __body__ or our web page.  Essentially ever
     <h1>Hello, World!</h1>
 ```
 
-The __h1__ tag tells the browser to display everything between the tags in a large bold font or __Heading__.  There are six levels of headers, __h1__ being the largest, __h6__ the smallest.  To see what it looks like copy this code into your page just underneath the existing __h1__ tags so your file looks like [this](first-headers.html) and refresh your browser.
+The __h1__ tag tells the browser to display everything between the tags in a large bold font or __Heading__.  There are six levels of headers, __h1__ being the largest, __h6__ the smallest.  
 
 ```html
-    <h2>h2 Hello, World!</h2>
-    <h3>h3 Hello, World!</h3>
-    <h4>h4 Hello, World!</h4>
-    <h5>h5 Hello, World!</h5>
-    <h6>h6 Hello, World!</h6>
+  </body>
+</html>
 ```
+The rest of the lines are closing tags to complement the opening body tag and opening html tags.
 
-You should now see a page that looks similar to this
+One thing to remember with tags is that each one has an opening and closing tag.  An opening tag that appears after another opening tag, must have a closing tag that appears before the first tags closing tag.  For example:
+
+```html
+    <body>
+        <h1>
+    </body>
+        </h1>
+```
+is invalid.
+
+## Challenge
+Try to edit first.html using the __h1__ through __h6__ tags so that it looks like this.
+
 ![Page with Headers](first-headers.png)
+
+## Conclusion
+We just learned the basics of creating a web page.  We walked through the structure of an HTML Document.  At the heart of every web page on the internet, is the same basic HTML structure.  Next, we'll explore some more of the basics of a web page when we look into Cascading Style Sheets and JavaScript.
